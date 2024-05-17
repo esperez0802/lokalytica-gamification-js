@@ -3,7 +3,7 @@ import Logo from "../public/logo.png";
 import Link from "next/link";
 import { getServerSession } from "next-auth";
 import Head from "next/head";
-import { authOptions } from "../app/api/auth/[...nextauth]/route";
+import { authOptions } from "../lib/authOptions";
 
 export default async function LeaderboardPage() {
   const session = await getServerSession(authOptions);
